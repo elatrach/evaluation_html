@@ -1,9 +1,17 @@
-$bp1: 768px;
-$bp2: 1170px;
+$bp1: 480px;
+$bp2: 768px;
+
+
+@font-face {
+    font-family: "Bermina Sans";
+    font-style: normal;
+    font-weight: normal;
+    src: url("../fonts/BerninaSans-Web-CondensedBold.woff2") format("woff2");
+}
 
 
 .inner {
-	width: 100%
+	width: 100%;
 }
 
 .bg_dotted {
@@ -31,13 +39,15 @@ $bp2: 1170px;
 @media screen and (min-width: $bp1){
 	.inner {
 		width: $bp1;
-		margin: 0 auto;
+        margin: 0 auto;
+		
 	}
 }
 
 @media screen and (min-width: $bp2){
 	.inner {
 		width: $bp2;
+        
 	}
 }
 
@@ -52,11 +62,4 @@ $bp2: 1170px;
 	margin-bottom: 1rem;
 }
 
-@media screen and (min-width: $bp1){
-	.photo_texte {
-		flex-direction: row;
-	}
-	.texte {
-		padding-left: 1rem;
-	}
-}
+

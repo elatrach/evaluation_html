@@ -3,6 +3,26 @@
 @import 'layout';
 @import 'menu';
 
+
+$blancSombre: darken(white,50%);
+
+body{
+    font-family: "Bermina Sans";
+}
+
+h3{
+    font-family: "GothamHTF";
+}
+
+.rdv{
+    background-color:white;
+    
+}
+
+.rdv:hover {
+     background-color: $blancSombre ;
+}
+
 .hidden {
     visibility: hidden;
 }
@@ -11,7 +31,16 @@
 header{
    background-image: url("../background.jpg");
    height: 400px;
+    background-position: center;
+  background-repeat: no-repeat;
+    background-size: cover;
     
+}
+
+.text_background{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 .hautDePage{
@@ -48,42 +77,69 @@ btn{
 }
 
 
-
-.Icon {
-  /* Permet de redimensionner en changeant la font-size de l’icône */
-  width: 1em;
-  height: 1em;
-  /* Bel alignement visuel des icônes avec le texte */
-  vertical-align: -0.15em;
-  /* fill par défaut = valeur de la propriété couleur de son élément parent */
-  fill: currentColor;
-  /* Les paths et les strokes qui dépassent de la viewBox peuvent apparaître dans IE.
-	Si vous utilisez normalize.css, inutile de l’ajouter. */
-  overflow: hidden;
+@media screen and (min-width: $bp1){
+    
+    .logo_site{
+    
+	width: 200px;
+    }
+    
+    .photos
+    {
+        display: flex;
+        flex-wrap: wrap;
+        
+        >div{
+            width: percentage(0.5);
+        }
+        
+        
+    }
+    
+    .image_smartphone{
+        order: 2;
+    }
+    
+    .image_gym{
+        order: 1;
+    }
+    
+    .image_cryolipolyse{
+        order: 3;
+    }
+    
+    
 }
 
 
-.svg_gr {
-    width:11em;
-  height: 10em;
-}
-.nav{
-     
-    display: flex;
-    justify-content: center;
+@media screen and (min-width: $bp2){
+	.photos
+    {
+        display: flex;
+        flex-wrap: nowrap;
+        
+        >div{
+            width: 1;
+        }
+        
+        
+    }
+    
+    header{
+  
+   height: 800px;
+  
+    }
+    
+    .nomMarque{
+        display: flex;
+        align-self: flex-end;
+        
+    }
 }
 
-.menu{
 
-padding: 0;
-margin:0;
-list-style-type: none;
-display: flex;
-flex-direction: row;
-justify-content: space-around;
-align-items: center;
 
-}
 
 
 
