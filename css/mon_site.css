@@ -395,30 +395,77 @@ template {
 
 body {
   font-family: "Bermina Sans";
+  color: #00465b;
 }
 
 h3 {
   font-family: "GothamHTF";
 }
 
-.rdv {
-  background-color: white;
-}
-
-.rdv:hover {
-  background-color: gray;
-}
-
-.hidden {
-  visibility: hidden;
+img {
+  width: 100%;
+  height: auto;
 }
 
 header {
   background-image: url("../background.jpg");
   height: 400px;
+  width: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: end;
+      align-items: flex-end;
+}
+
+header > div {
+  width: 100%;
+}
+
+.text_background {
+  font-size: 0.5em;
+  background: white;
+  opacity: 0.5;
+}
+
+.temperature {
+  font-size: 0.8em;
+}
+
+.text_background > div {
+  color: black;
+}
+
+.btn {
+  border: solid black 1px;
+  border-radius: 5px;
+}
+
+.rdv {
+  background: #fff;
+  color: #00465b;
+}
+
+.hautDePage {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
+}
+
+.hautDePage > div {
+  width: 50%;
+}
+
+.bouton {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.hidden {
+  visibility: hidden;
 }
 
 .text_background {
@@ -426,17 +473,6 @@ header {
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
-  -ms-flex-pack: end;
-      justify-content: flex-end;
-}
-
-.hautDePage {
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.hautDePage > div {
-  width: 50%;
 }
 
 .center {
@@ -447,14 +483,6 @@ header {
 
 .textcenter {
   text-align: center;
-}
-
-.logo_site {
-  width: 100%;
-}
-
-btn {
-  width: 100%;
 }
 
 .photo img {
@@ -485,6 +513,7 @@ btn {
   .image_cryolipolyse {
     -ms-flex-order: 3;
         order: 3;
+    margin: auto;
   }
 }
 
@@ -501,11 +530,18 @@ btn {
   header {
     height: 800px;
   }
+  .text_background {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    font-size: 1em;
+  }
   .nomMarque {
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-item-align: end;
-        align-self: flex-end;
+    -ms-flex-pack: end;
+        justify-content: flex-end;
   }
 }
 

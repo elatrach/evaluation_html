@@ -6,73 +6,124 @@
 
 $blancSombre: darken(white,50%);
 
+
+
+$body-bg-color  : rgb(245, 245, 245);
+$couleurPrincipale: #00465b;
+$cPmoinsSombre: lighten($couleurPrincipale,10%);
+
 body{
     font-family: "Bermina Sans";
+    color: $couleurPrincipale;
 }
 
 h3{
     font-family: "GothamHTF";
 }
 
-.rdv{
-    background-color:white;
+
+
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+header{
+   background-image: url("../background.jpg");
+   height: 400px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex; 
+    align-items: flex-end;
     
 }
 
-.rdv:hover {
-     background-color: $blancSombre ;
+header > div{
+    width: 100%
 }
+
+
+
+
+.text_background{
+    font-size: 0.5em;
+    background: white;
+    opacity: 0.5;
+     
+}
+
+
+.temperature{
+    font-size: 0.8em;
+        
+}
+
+.text_background > div{
+    color: black;
+    
+}
+
+.btn{
+     border : solid black 1px;
+     border-radius: 5px;
+}
+
+.rdv{
+    background: #fff;
+    color: $couleurPrincipale;
+
+    &:hover {
+        
+    }
+}
+
+.hautDePage{
+    display: flex;
+    justify-content: flex-end;
+    > div{
+        width:50%;
+    }
+    
+}
+
+
+    
+.bouton{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+
 
 .hidden {
     visibility: hidden;
 }
 
 
-header{
-   background-image: url("../background.jpg");
-   height: 400px;
-    background-position: center;
-  background-repeat: no-repeat;
-    background-size: cover;
-    
-}
-
 .text_background{
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    
+    
 }
 
-.hautDePage{
-    display: flex;
-   
-    > div {
-		width: 50%;
-	}
-}
 
 .center{
     text-align: center;
     margin-top: auto;
-    margin-bottom: auto
+    margin-bottom: auto;
 }
 
 .textcenter{
     text-align: center;
 }
 
-.logo_site{
-    
-	width: 100%;
-}
-
-btn{
-    width: 100%;
-}
 
 
 .photo img{
-	
     border-radius:50%;
 }
 
@@ -83,6 +134,7 @@ btn{
     
 	width: 200px;
     }
+    
     
     .photos
     {
@@ -98,6 +150,7 @@ btn{
     
     .image_smartphone{
         order: 2;
+         
     }
     
     .image_gym{
@@ -106,7 +159,9 @@ btn{
     
     .image_cryolipolyse{
         order: 3;
+         margin: auto;
     }
+    
     
     
 }
@@ -127,15 +182,24 @@ btn{
     
     header{
   
-   height: 800px;
+     height: 800px;
   
     }
     
+    
+    
+    .text_background{
+        
+        display: flex;
+        flex-direction: row;
+        font-size: 1em;
+    }
+    
+    
     .nomMarque{
         display: flex;
-        align-self: flex-end;
-        
-    }
+        justify-content: flex-end;
+    };
 }
 
 
