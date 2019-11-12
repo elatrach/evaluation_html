@@ -411,6 +411,7 @@ header {
   background-image: url("../background.jpg");
   height: 400px;
   width: 100%;
+  position: relative;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -420,22 +421,35 @@ header {
       align-items: flex-end;
 }
 
+.promo {
+  color: white;
+  background-color: red;
+  border-radius: 5px;
+  position: absolute;
+  top: 4em;
+  right: 2em;
+  -webkit-transform: rotate(25deg);
+          transform: rotate(25deg);
+  width: 200px;
+  padding: 2%;
+}
+
 header > div {
   width: 100%;
 }
 
 .text_background {
   font-size: 0.5em;
-  background: white;
-  opacity: 0.5;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin-bottom: 10px;
 }
 
 .temperature {
   font-size: 0.8em;
 }
 
-.text_background > div {
-  color: black;
+.text_background div {
+  color: white;
 }
 
 .btn {
@@ -451,12 +465,8 @@ header > div {
 .hautDePage {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: end;
-      justify-content: flex-end;
-}
-
-.hautDePage > div {
-  width: 50%;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
 }
 
 .bouton {

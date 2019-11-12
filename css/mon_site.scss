@@ -33,11 +33,26 @@ header{
    background-image: url("../background.jpg");
    height: 400px;
     width: 100%;
+    position: relative;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex; 
     align-items: flex-end;
+    
+}
+
+
+.promo{
+    color:white;
+    background-color: red;
+    border-radius: 5px;
+    position: absolute;
+    top: 4em;
+    right: 2em;
+    transform: rotate(25deg);
+    width:200px;
+    padding: 2%;
     
 }
 
@@ -50,9 +65,9 @@ header > div{
 
 .text_background{
     font-size: 0.5em;
-    background: white;
-    opacity: 0.5;
-     
+    background-color: rgba(255, 255, 255, 0.2);
+    margin-bottom: 10px
+
 }
 
 
@@ -61,9 +76,8 @@ header > div{
         
 }
 
-.text_background > div{
-    color: black;
-    
+.text_background div{
+    color:white;
 }
 
 .btn{
@@ -82,10 +96,7 @@ header > div{
 
 .hautDePage{
     display: flex;
-    justify-content: flex-end;
-    > div{
-        width:50%;
-    }
+    justify-content: space-between;
     
 }
 
